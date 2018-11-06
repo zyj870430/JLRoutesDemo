@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <JLRoutes/JLRoutes.h>
 
 @interface ViewController ()
 
@@ -16,9 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"首页";
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+//    NSString *url = @"JLRoutesDemo://push/OtherViewController?userId=1234";
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    [JLRoutes routeURL:[NSURL URLWithString:@"JLRoutesDemo://push/OtherViewController?userId=1234"]];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

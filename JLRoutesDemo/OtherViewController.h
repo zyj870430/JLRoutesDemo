@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OtherViewController.h
 //  JLRoutesDemo
 //
 //  Created by chongdian on 2018/10/12.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface OtherViewController : UIViewController
+@property (nonatomic, copy) NSString *userId;
 @end
-
